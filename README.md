@@ -36,7 +36,6 @@ void setup()
 pinMode(LED_BUILTIN, OUTPUT);
 
 lcd.begin(16, 2);               // start lcd
-for(int i=0;i<=3;i++);
 lcd.setCursor(0,0);
   lcd.print("Calculator");
   lcd.setCursor(0,1);

@@ -24,8 +24,8 @@ char keys[ROWS][COLS] = {
   {'7','8','9','*'},
   {'C','0','=','/'}
 };
-byte rowPins[ROWS] = {9,8,7,6}; //connect to the row pinouts of the keypad
-byte colPins[COLS] = {5,4,3,2}; //connect to the column pinouts of the keypad
+byte rowPins[ROWS] = {9,8,7,6}; 
+byte colPins[COLS] = {5,4,3,2}; 
 
 
 //initialize an instance of class NewKeypad
@@ -53,7 +53,7 @@ void loop()
   customKey = customKeypad.getKey();
   switch(customKey) 
   {
-  case '0' ... '9': // This keeps collecting the first value until a operator is pressed "+-*/"
+  case '0' ... '9': 
     lcd.setCursor(0,0);
     infix += customKey;
     screan += customKey;

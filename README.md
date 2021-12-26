@@ -1,7 +1,6 @@
 # Calculator-With-Arduino (Using StackArray.h)
 This project represents a calculator with Arduino Uno. It can calculate long-expression correctly like 1+2-3*2/4 ......
-```
-***code
+```C
 #include <StackArray.h>
 #include <Keypad.h>
 #include <Wire.h> 
